@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <meta name="referrer" content="no-referrer" />
+
+    <title>Flower Trust | Home</title>
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/logo.png" type="image/png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Include AOS (Animate on Scroll) Library in <head> -->
+    <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+
+
+</head>
+
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="80" tabindex="0">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top advanced-navbar">
+        <div class="container-fluid px-4 d-flex justify-content-between align-items-center">
+
+            <!-- Logo -->
+            <a class="navbar-brand fw-bold d-flex align-items-center text-white" href="#">
+                <img loading="lazy" src="https://img.icons8.com/color/48/flower.png" alt="logo" width="30"
+                    class="me-2" />
+                Flower Trust
+            </a>
+
+            <!-- Right Section: Donate (mobile) + Hamburger -->
+            <div class="d-flex align-items-center gap-2">
+                <!-- Donate Button (mobile only) -->
+                <a href="#donate" class="btn btn-warning btn-glow btn-sm d-lg-none">Donate</a>
+
+                <!-- Hamburger Toggle -->
+                <button class="navbar-toggler custom-toggler" type="button" id="openSidebar">
+                    <div class="hamburger">
+                        <span></span><span></span><span></span>
+                    </div>
+                </button>
+            </div>
+
+            <!-- Desktop Nav Links -->
+            <div class="collapse navbar-collapse justify-content-end d-none d-lg-flex" id="navbarNav">
+                <ul class="navbar-nav align-items-center gap-3">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item">
+                        <a href="#donate" class="btn btn-warning btn-sm btn-glow">Donate</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Overlay (background blur when sidebar is open) -->
+    <div id="sidebarOverlay" class="sidebar-overlay"></div>
+
+    <!-- Slide-in Sidebar for Mobile -->
+    <div id="mobileSidebar" class="mobile-sidebar">
+        <div class="sidebar-header d-flex justify-content-end p-3">
+            <button id="closeSidebar" class="btn-close btn-close-white"></button>
+        </div>
+        <ul class="list-unstyled text-center px-4">
+            <li><a href="#home" class="sidebar-link d-block py-3">Home</a></li>
+            <li><a href="#about" class="sidebar-link d-block py-3">About</a></li>
+            <li><a href="#services" class="sidebar-link d-block py-3">Services</a></li>
+            <li><a href="#testimonials" class="sidebar-link d-block py-3">Testimonials</a></li>
+            <li><a href="#gallery" class="sidebar-link d-block py-3">Gallery</a></li>
+            <li><a href="#contact" class="sidebar-link d-block py-3">Contact</a></li>
+            <li class="pt-4">
+                <a href="#donate" class="btn btn-warning w-100 btn-glow fs-6 fw-semibold">Donate Now</a>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <!-- Hero -->
+    <header id="home" class="hero-section d-flex align-items-center">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <!-- Text Content -->
+                <div class="col-lg-6 text-white text-center text-lg-start">
+                    <h5 class="text-uppercase fw-semibold mb-3" style="letter-spacing: 1px;">Empathy. Care. Action.</h5>
+                    <h1 class="display-4 fw-bold mb-3">Service is Our Life</h1>
+                    <p class="lead mb-4">We empower the elderly and the underprivileged with dignity, compassion, and
+                        sustainable support.</p>
+
+                    <div class="d-flex flex-wrap gap-3 justify-content-center justify-content-lg-start">
+                        <a href="#about" class="btn btn-warning btn-lg px-4 shadow">Explore More</a>
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4">Donate Now</a>
+                    </div>
+
+                    <div class="d-flex gap-3 mt-4 flex-wrap justify-content-center justify-content-lg-start">
+                        <span class="badge-glass">🌟 10+ Years of Service</span>
+                        <span class="badge-glass">❤️ 5,000+ Lives Touched</span>
+                        <span class="badge-glass">🏆 Govt. Registered NGO</span>
+                    </div>
+                </div>
+
+                <!-- 3D Lottie Animation -->
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <lottie-player src="https://assets2.lottiefiles.com/packages/lf20_totrpclr.json"
+                        background="transparent" speed="1" style="max-width: 100%; height: 380px;" loop autoplay>
+                    </lottie-player>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light position-relative overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="fw-bold">About <span class="text-warning">Flower Trust</span></h2>
+                <p class="text-muted mt-2">Transforming lives with compassion, dignity, and purpose.</p>
+            </div>
+
+            <div class="row align-items-center">
+                <!-- Image -->
+                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                    <div class="position-relative">
+                        <img loading="lazy" src="assets/images/about/about.jpg" alt="About Flower Trust"
+                            class="img-fluid rounded-4 shadow-lg" />
+                        <span class="ribbon-badge floating-badge">Since 2010</span>
+                    </div>
+                </div>
+
+                <!-- Text + Info Cards -->
+                <div class="col-lg-6" data-aos="fade-left" data-aos-delay="200">
+                    <p class="lead mb-4">Flower Trust is a registered non-profit rooted in Nagercoil, Tamil Nadu. We're
+                        devoted to
+                        caring for the elderly, uplifting women and children, and providing essentials for the
+                        underprivileged.</p>
+
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="info-card d-flex align-items-start gap-3 shadow-sm p-3 rounded-3">
+                                <img loading="lazy" src="https://img.icons8.com/color/48/elderly-person.png"
+                                    alt="Elder Care" />
+                                <div>
+                                    <h6 class="mb-1 fw-semibold">24x7 Elder Care</h6>
+                                    <p class="mb-0 small text-muted">Safe and loving homes for abandoned elderly
+                                        citizens.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="info-card d-flex align-items-start gap-3 shadow-sm p-3 rounded-3">
+                                <img loading="lazy" src="https://img.icons8.com/color/48/graduation-cap.png"
+                                    alt="Education" />
+                                <div>
+                                    <h6 class="mb-1 fw-semibold">Educational Support</h6>
+                                    <p class="mb-0 small text-muted">Sponsoring underprivileged children's education.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="info-card d-flex align-items-start gap-3 shadow-sm p-3 rounded-3">
+                                <img loading="lazy" src="https://img.icons8.com/color/48/restaurant.png"
+                                    alt="Food Service" />
+                                <div>
+                                    <h6 class="mb-1 fw-semibold">Food Drives</h6>
+                                    <p class="mb-0 small text-muted">Distributing food in slums, orphanages & shelters.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="info-card d-flex align-items-start gap-3 shadow-sm p-3 rounded-3">
+                                <img loading="lazy" src="https://img.icons8.com/color/48/group-of-projects.png"
+                                    alt="Support Group" />
+                                <div>
+                                    <h6 class="mb-1 fw-semibold">Women Empowerment</h6>
+                                    <p class="mb-0 small text-muted">Skills training, support networks & income
+                                        programs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#services" class="btn btn-warning mt-4 fw-semibold">Explore Our Work</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="py-5 bg-dark text-white">
+        <div class="container-fluid">
+            <div class="text-center mb-5" data-aos="zoom-in">
+                <h2 class="fw-bold display-5">Our <span class="text-warning">Services</span></h2>
+                <p class="text-muted">Comprehensive care programs tailored to uplift every section of society.</p>
+            </div>
+
+            <div class="row g-4">
+                <!-- Card 1 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-card glass-card h-100 text-center p-4">
+                        <div class="flex">
+                            <lottie-player src="assets/lottie/senior.json" background="transparent" speed="1"
+                                style="width: 100px; height: 100px; border-radius: 100px;" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Senior Citizen Care</h5>
+                        <p class="small text-light">We provide safe, respectful living spaces for elders with
+                            personalized care.</p>
+                        <ul class="text-start small text-muted">
+                            <li>👩‍⚕️ 24/7 medical and emotional support</li>
+                            <li>🛏️ Safe, peaceful accommodations</li>
+                            <li>🎨 Recreational activities & festivals</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-card glass-card h-100 text-center p-4">
+                        <div class="flex">
+                            <lottie-player src="assets/lottie/shelter.json" background="transparent" speed="1"
+                                style="width: 100px; height: 100px; border-radius: 100px;" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Homeless Shelter</h5>
+                        <p class="small text-light">We offer safe shelter, warm meals, clothing, and hope for the
+                            homeless.</p>
+                        <ul class="text-start small text-muted">
+                            <li>🍛 Daily hot meals</li>
+                            <li>🛏️ Beds, blankets, sanitation</li>
+                            <li>🧠 Counseling & job rehab support</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-card glass-card h-100 text-center p-4">
+                        <div class="flex">
+                            <lottie-player src="assets/lottie/education.json" background="transparent" speed="1"
+                                style="width: 100px; height: 100px; border-radius: 100px;" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Education Support</h5>
+                        <p class="small text-light">Helping children succeed by removing barriers to education.</p>
+                        <ul class="text-start small text-muted">
+                            <li>🎒 School bags & supplies</li>
+                            <li>🎓 Tuition sponsorships</li>
+                            <li>👨‍🏫 Mentoring and guidance</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-card glass-card h-100 text-center p-4">
+                        <div class="flex">
+                            <lottie-player src="assets/lottie/women.json" background="transparent" speed="1"
+                                style="width: 100px; height: 100px; border-radius: 100px;" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Women Empowerment</h5>
+                        <p class="small text-light">We help women achieve independence, dignity, and equality.</p>
+                        <ul class="text-start small text-muted">
+                            <li>💼 Vocational training & jobs</li>
+                            <li>🏡 Self-help groups</li>
+                            <li>📚 Legal & health awareness</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-card glass-card h-100 text-center p-4">
+                        <div class="flex">
+                            <lottie-player src="assets/lottie/disaster.json" background="transparent" speed="1"
+                                style="width: 100px; height: 100px;" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Disaster Relief</h5>
+                        <p class="small text-light">Quick response units for floods, pandemics, and emergencies.</p>
+                        <ul class="text-start small text-muted">
+                            <li>🚑 Food, shelter & aid distribution</li>
+                            <li>🧪 Medical assistance & PPE kits</li>
+                            <li>🔄 Rehabilitation & rebuilding</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Card 6 -->
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-card glass-card h-100 text-center p-4">
+                        <div class="flex">
+                            <lottie-player src="assets/lottie/healthcare.json" background="transparent" speed="1"
+                                style="width: 100px; height: 100px;" loop autoplay>
+                            </lottie-player>
+                        </div>
+                        <h5 class="fw-semibold mt-3">Community Health Camps</h5>
+                        <p class="small text-light">Free health checkups, medicines, and awareness drives for all.</p>
+                        <ul class="text-start small text-muted">
+                            <li>🩺 Blood pressure & sugar testing</li>
+                            <li>💊 Free medication</li>
+                            <li>👨‍⚕️ Doctor consultations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- AOS Script -->
+
+
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-5 position-relative bg-light">
+        <div class="container-fluid p-3">
+            <h2 class="text-center fw-bold mb-5">What People Say</h2>
+
+            <div class="swiper testimonialSwiper">
+                <div class="swiper-wrapper">
+
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/women/65.jpg"
+                                alt="Priya Sharma" class="testimonial-img" loading="lazy">
+                            <p class="testimonial-quote">“Their care for my grandmother was full of dignity and love.”
+                            </p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <h6 class="testimonial-name">Priya Sharma</h6>
+                            <small class="text-muted">Nagercoil</small>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/men/52.jpg" alt="Ravi Kumar"
+                                class="testimonial-img" loading="lazy">
+                            <p class="testimonial-quote">“Flower Trust helped my children go back to school and feel
+                                hopeful again.”</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <h6 class="testimonial-name">Ravi Kumar</h6>
+                            <small class="text-muted">Madurai</small>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/women/58.jpg"
+                                alt="Meera Joseph" class="testimonial-img" loading="lazy">
+                            <p class="testimonial-quote">“A trustworthy organization truly dedicated to service and
+                                compassion.”</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <h6 class="testimonial-name">Meera Joseph</h6>
+                            <small class="text-muted">Trivandrum</small>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/men/47.jpg" alt="Anand Raj"
+                                class="testimonial-img" loading="lazy">
+                            <p class="testimonial-quote">“A warm and welcoming place for our elders, thank you for the
+                                love!”</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <h6 class="testimonial-name">Anand Raj</h6>
+                            <small class="text-muted">Tirunelveli</small>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="testimonial-card">
+                            <img loading="lazy" src="https://randomuser.me/api/portraits/women/33.jpg" alt="Latha Devi"
+                                class="testimonial-img" loading="lazy">
+                            <p class="testimonial-quote">“The food distribution drives have saved lives. Forever
+                                grateful.”</p>
+                            <div class="stars">⭐⭐⭐⭐⭐</div>
+                            <h6 class="testimonial-name">Latha Devi</h6>
+                            <small class="text-muted">Chennai</small>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Navigation & Pagination -->
+                <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-pagination mt-4"></div> -->
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Gallery Section -->
+
+    <section id="gallery" class="py-5 position-relative  text-white">
+        <div id="tsparticles" class="position-absolute top-0 start-0 w-100 h-100 z-n1"></div>
+        <div class="container-fluid p-5 position-relative">
+            <h2 class="text-center fw-bold mb-5 text-white">Our Moments of Care</h2>
+
+            <div class="row gallery-masonry" data-masonry='{"percentPosition": true }'>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo1.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo1.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo2.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo2.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo3.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo3.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo4.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo4.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo5.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo5.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo6.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo6.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo7.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo7.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo8.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo8.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo9.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo9.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo10.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo10.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo11.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo11.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo12.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo12.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo13.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo13.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Gallery Item -->
+                <div class="col-lg-4 col-sm-6 mb-4">
+                    <a href="assets/images/gallery/demo14.jpg" class="glightbox" data-gallery="flowerGallery">
+                        <div class="gallery-card position-relative overflow-hidden rounded-4 shadow-sm">
+                            <img loading="lazy" src="assets/images/gallery/demo14.jpg" class="img-fluid w-100"
+                                alt="Charity Image" />
+                            <div class="gallery-overlay d-flex align-items-center justify-content-center">
+                                <i class="bi bi-eye-fill text-white fs-3"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Call to Action -->
+    <section class="py-5 position-relative bg-gradient"
+        style="background: linear-gradient(135deg, #ffcb00, #ff9800) !important; overflow: hidden;">
+        <div class="container text-center position-relative z-1">
+            <h2 class="display-5 fw-bold mb-3 text-white text-shadow">
+                <span class="text-gradient">Join Us in Making a Difference</span>
+            </h2>
+            <p class="lead mb-4 text-white-75">
+                Be a part of something meaningful — support our mission by
+                <strong>donating</strong>, <strong>volunteering</strong>, or <strong>spreading awareness</strong>.
+            </p>
+
+            <!-- CTA Buttons -->
+            <div class="d-flex justify-content-center gap-3 flex-wrap mb-4">
+                <a href="#donate" class="btn btn-outline-light btn-lg px-4 animate-button">
+                    <i class="fas fa-hand-holding-heart me-2 fa-beat"></i> Donate
+                </a>
+                <a href="#volunteer" class="btn btn-outline-light btn-lg px-4 animate-button">
+                    <i class="fas fa-users me-2 fa-bounce"></i> Volunteer
+                </a>
+                <a href="#contact" class="btn btn-dark btn-lg px-4 animate-button">
+                    <i class="fas fa-bullhorn me-2 fa-shake"></i> Get Involved
+                </a>
+            </div>
+
+            <p class="small fst-italic text-white-50">
+                Every small act of kindness contributes to a bigger impact.
+            </p>
+        </div>
+
+    </section>
+
+
+    <!-- Contact Us Section -->
+    <section id="contact" class="py-5 position-relative bg-light overflow-hidden">
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-8 text-center">
+                    <h2 class="fw-bold display-5 mb-3">Let’s Connect</h2>
+                    <p class="text-muted fs-5">We're here to answer any questions or hear how you'd like to support our
+                        mission.</p>
+                </div>
+            </div>
+
+            <div class="row g-5 align-items-start">
+
+                <!-- Contact Info Card -->
+                <div class="col-lg-5">
+                    <div class="bg-white shadow-lg rounded-4 p-4 p-md-5 h-100 position-relative contact-glass">
+                        <h4 class="fw-bold mb-4">Flower Trust</h4>
+                        <p class="mb-3"><i class="bi bi-geo-alt-fill text-warning me-2"></i>Vadachery Bus Stand,
+                            Nagercoil</p>
+                        <p class="mb-3"><i class="bi bi-envelope-fill text-warning me-2"></i>info@flowertrust.org</p>
+                        <p class="mb-3"><i class="bi bi-telephone-fill text-warning me-2"></i>+91 98765 43210</p>
+                        <p class="mb-3"><i class="bi bi-clock-fill text-warning me-2"></i>Mon - Sat: 9:00 AM - 6:00 PM
+                        </p>
+                        <div class="social-icons mt-4">
+                            <a href="#" class="text-dark me-3 fs-4"><i class="bi bi-facebook"></i></a>
+                            <a href="#" class="text-dark me-3 fs-4"><i class="bi bi-instagram"></i></a>
+                            <a href="#" class="text-dark fs-4"><i class="bi bi-twitter-x"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-7">
+                    <div class="bg-white shadow-lg rounded-4 p-4 p-md-5">
+                        <h5 class="fw-semibold mb-4">Send Us a Message</h5>
+                        <form id="contactForm">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <input type="text" class="form-control rounded-pill px-4 py-3"
+                                        placeholder="Your Name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <input type="email" class="form-control rounded-pill px-4 py-3"
+                                        placeholder="Your Email" required>
+                                </div>
+                                <div class="col-12">
+                                    <input type="text" class="form-control rounded-pill px-4 py-3" placeholder="Subject"
+                                        required>
+                                </div>
+                                <div class="col-12">
+                                    <textarea class="form-control rounded-4 px-4 py-3" rows="5"
+                                        placeholder="Your Message" required></textarea>
+                                </div>
+                                <div class="col-12 d-grid">
+                                    <button type="submit" class="btn btn-warning btn-lg rounded-pill mt-2 shadow-sm">
+                                        <i class="bi bi-send-fill me-2"></i>Send Message
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white pt-5 pb-4">
+        <div class="container">
+            <div class="row g-5">
+
+                <!-- Brand + Mission -->
+                <div class="col-lg-4 col-md-6">
+                    <h4 class="fw-bold text-warning mb-3">🌼 Flower Trust</h4>
+                    <p class="text-white-50">Empowering lives through care, dignity, and hope. Join our mission to
+                        create a compassionate society where no one is left behind.</p>
+                    <div class="mt-3">
+                        <a href="#" class="me-2 text-white-50 fs-5"><i class="bi bi-facebook"></i></a>
+                        <a href="#" class="me-2 text-white-50 fs-5"><i class="bi bi-instagram"></i></a>
+                        <a href="#" class="me-2 text-white-50 fs-5"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#" class="text-white-50 fs-5"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-lg-2 col-md-6">
+                    <h6 class="fw-semibold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled text-white-50">
+                        <li><a href="#about" class="text-decoration-none text-white-50">About Us</a></li>
+                        <li><a href="#gallery" class="text-decoration-none text-white-50">Gallery</a></li>
+                        <li><a href="#volunteer" class="text-decoration-none text-white-50">Volunteer</a></li>
+                        <li><a href="#donate" class="text-decoration-none text-white-50">Donate</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-semibold mb-3">Reach Us</h6>
+                    <p class="mb-2 text-white-50"><i class="bi bi-geo-alt-fill text-warning me-2"></i>Vadachery Bus
+                        Stand, Nagercoil</p>
+                    <p class="mb-2 text-white-50"><i
+                            class="bi bi-envelope-fill text-warning me-2"></i>info@flowertrust.org</p>
+                    <p class="mb-0 text-white-50"><i class="bi bi-telephone-fill text-warning me-2"></i>+91 98765 43210
+                    </p>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="col-lg-3 col-md-6">
+                    <h6 class="fw-semibold mb-3">Stay Updated</h6>
+                    <p class="text-white-50">Subscribe to receive updates, news & upcoming events.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control me-2 rounded-start" placeholder="Your Email" required>
+                        <button class="btn btn-warning rounded-end">Subscribe</button>
+                    </form>
+                </div>
+
+            </div>
+
+            <hr class="border-light opacity-25 my-4" />
+
+            <div class="text-center small text-white-50">
+                © 2025 <strong>Flower Trust</strong>. All rights reserved. | Made with ❤️ for humanity.
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- WhatsApp Button -->
+    <a href="https://wa.me/919876543210" class="whatsapp-float shadow-lg" target="_blank" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Scripts -->
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
